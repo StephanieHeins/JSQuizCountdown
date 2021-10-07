@@ -6,7 +6,8 @@ const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const counter = document.getElementById("counter");
-const scoreDiv = document.getElementById("score");
+const score = document.getElementById("score");
+const userScore = document.getElementById("userscore");
 
 // Questions 
 let questions = [
@@ -33,14 +34,14 @@ let questions = [
     }
 ]
 
-// Variables
+let scoreCount = 0;
+
+// Start Quiz
 const lastQuestion = questions.length -1;
 let runningQuestion = 0; 
 
-// Click Start to begin Quiz
 start.addEventListener("click",startQuiz);
 
-// Start Quiz
 function startQuiz(){
     start.style.display = "none";
     renderQuestion();
@@ -59,6 +60,7 @@ function timerCountdown() {
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
+      renderScore();
     }
 
   }, 1000);
@@ -75,8 +77,21 @@ function renderQuestion(){
 
 }
 
-// Check Answer 
+// Check Answers
 
 // Score 
+function renderScore(){
+    score.style.display = "block";
+    quiz.style.display = "none";
+
+    const finalScore = Math.round(100 * scoreCount/questions.length);
+
+    userScore.innerHTML = finalScore; 
+
+
+
+}
+
+// Past Scores
 
 // Restart Button
