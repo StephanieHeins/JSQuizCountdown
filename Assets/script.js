@@ -8,10 +8,6 @@ const choiceC = document.getElementById("C");
 const counter = document.getElementById("counter");
 const scoreDiv = document.getElementById("score");
 
-// Variables
-const lastQuestion = questions.length -1;
-let runningQuestion = 0; 
-
 // Questions 
 let questions = [
     {
@@ -37,9 +33,36 @@ let questions = [
     }
 ]
 
+// Variables
+const lastQuestion = questions.length -1;
+let runningQuestion = 0; 
+
+// Click Start to begin Quiz
+start.addEventListener("click",startQuiz);
+
 // Start Quiz
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    timerCountdown();
+}
 
 // Timer Countdown 
+var timeEl = document.getElementById("time");
+var secondsLeft = 30;
+
+function timerCountdown() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft;
+
+    if(secondsLeft === 0) {
+      clearInterval(timerInterval);
+    }
+
+  }, 1000);
+}
 
 // Render Question 
 function renderQuestion(){
@@ -51,8 +74,6 @@ function renderQuestion(){
     choiceC.innerHTML = q.choiceC;
 
 }
-
-start.addEventListener("click",startQuiz);
 
 // Check Answer 
 
