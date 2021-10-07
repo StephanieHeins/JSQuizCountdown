@@ -35,11 +35,10 @@ let questions = [
 ]
 
 let scoreCount = 0;
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
 
 // Start Quiz
-const lastQuestion = questions.length -1;
-let runningQuestion = 0; 
-
 start.addEventListener("click",startQuiz);
 
 function startQuiz(){
@@ -78,6 +77,20 @@ function renderQuestion(){
 }
 
 // Check Answers
+function checkAnswer(answer){
+    if(answer == questions[runningQuestion].correct){
+        scoreCount++
+    }else{
+        secondsLeft--
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        renderScore();
+    }
+}
 
 // Score 
 function renderScore(){
@@ -86,7 +99,7 @@ function renderScore(){
 
     const finalScore = Math.round(100 * scoreCount/questions.length);
 
-    userScore.innerHTML = finalScore; 
+    userScore.innerHTML = finalScore + "%"; 
 
 
 
