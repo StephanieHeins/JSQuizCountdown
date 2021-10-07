@@ -79,9 +79,9 @@ function renderQuestion(){
 // Check Answers
 function checkAnswer(answer){
     if(answer == questions[runningQuestion].correct){
-        scoreCount++
+        scoreCount++;
     }else{
-        secondsLeft--
+        secondsLeft--;
     }
     count = 0;
     if(runningQuestion < lastQuestion){
