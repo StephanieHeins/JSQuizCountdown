@@ -33,16 +33,19 @@
     </div>
 
 <!-- Score Container -->
-    <div id="score" style="display: none;">
-        <div>Your score:</div>
-        <div id="userscore"></div>
-        <div>Enter your initials:</div>
-        <form></form>
+<div id="score" style="display: none;">
+    <div>Your score:</div>
+    <div id="userscore"></div>
+    <form id="initial-form" method="POST">
+      <label for="initial-text">Enter Your Initials & Score: </label>
+      <input type="text" placeholder="ABC" name="initial-text" id="initial-text" />
+    </form>
+    <p>Past Scores: <span id="initial-count">0</span></p>
+    <ul id="initial-list"></ul>
 
-        <div>Previous scores:</div>
-        <ul id="previousscores"></ul>
-        <button onClick="window.location.reload();">Play Again!</button>
-    </div>
+    <button onClick="window.location.reload();">Play Again!</button>
+
+</div>
 
 </div>
 
