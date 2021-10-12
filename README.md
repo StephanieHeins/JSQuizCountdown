@@ -4,7 +4,7 @@ Description:
 Countdown quiz with questions relating to Javascript. 
 
 How to use: 
-1. Go to: 
+1. Go to: https://stephanieheins.github.io/JSQuizCountdown/
 2. Click the Start button
 3. Answer the questions as they appear - You have 30 seconds to complete the quiz
 4. If you select a wrong answer, 1 second will be taken away from the timer 
