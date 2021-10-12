@@ -12,25 +12,32 @@ const userScore = document.getElementById("userscore");
 // Questions 
 let questions = [
     {
-        question: "Question 1",
-        choiceA: "Choice A (correct)",
-        choiceB: "Choice B",
-        choiceC: "Choice C",
+        question: "What is Javascript?",
+        choiceA: "Programming Language",
+        choiceB: "Nothing",
+        choiceC: "Dog breed",
         correct: "A"
     },
     {
-        question: "Question 2",
-        choiceA: "Choice A",
-        choiceB: "Choice B (correct)",
-        choiceC: "Choice C",
+        question: "When was Javascript created?",
+        choiceA: "1800",
+        choiceB: "1995",
+        choiceC: "2010",
         correct: "B"
     },
     {
-        question: "Question 3",
-        choiceA: "Choice A",
-        choiceB: "Choice B",
-        choiceC: "Choice C (correct)",
+        question: "How do you create a function?",
+        choiceA: "function = myFunction",
+        choiceB: "function: myFunction",
+        choiceC: "function myFunction ()",
         correct: "C"
+    },
+    {
+        question: "Is Javascript the same as Java?",
+        choiceA: "Yes",
+        choiceB: "No",
+        choiceC: "I'm not sure",
+        correct: "B"
     }
 ]
 
