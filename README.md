@@ -3,6 +3,8 @@
 Description: 
 Countdown quiz with questions relating to Javascript. 
 
+Screenshot: 
+
 How to use: 
 1. Go to: https://stephanieheins.github.io/JSQuizCountdown/
 2. Click the Start button
@@ -16,3 +18,4 @@ Languages used:
 - Javascript 
 - HTML
 - CSS 
+
