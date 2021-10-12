@@ -34,16 +34,16 @@
 
 <!-- Score Container -->
 <div id="score" style="display: none;">
-    <div>Your score:</div>
+    <div id="yourscore">Your score:</div>
     <div id="userscore"></div>
     <form id="initial-form" method="POST">
       <label for="initial-text">Enter Your Initials & Score: </label>
-      <input type="text" placeholder="ABC" name="initial-text" id="initial-text" />
+      <input type="text" placeholder="ABC 100%" name="initial-text" id="initial-text" />
     </form>
-    <p>Past Scores: <span id="initial-count">0</span></p>
-    <ul id="initial-list"></ul>
+        <p>Past Scores: <span id="initial-count">0</span></p>
+        <ul id="initial-list"></ul>
 
-    <button onClick="window.location.reload();">Play Again!</button>
+    <button onClick="window.location.reload();" id="playagain">Play Again!</button>
 
 </div>
 

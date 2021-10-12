@@ -34,3 +34,116 @@ body{
 }
 
 
+#question{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 150px;
+}
+#choices{
+    width : 480px;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid rgb(86, 206, 156);
+    font-weight: bold;
+}
+#time{
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+}
+
+#yourscore{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 60px;
+}
+#userscore{
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+}
+#initial-form{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+#initial-text{
+    width: 75%;
+    margin: 15px; 
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#score p{
+    font-size: 1em;
+    font-weight: bolder;
+    color: rgb(92, 206, 181);
+    text-align: center;
+}
+
+#score ul{
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li button {
+    margin-left: 10px;
+    border: solid;
+    border-color: rgb(92, 206, 181);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+#playagain{
+        width: 150px;
+        font-size: 1em;
+        font-weight: bolder;
+        border : 2px solid rgb(92, 206, 181);
+        text-align: center;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 10px;
+        margin-left: 40%;
+        margin-top: 10px;
+}
+#playagain:hover{
+        border: 3px solid rgb(42, 131, 172);
+        color : rgb(42, 131, 172);
+}
