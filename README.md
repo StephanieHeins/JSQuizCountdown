@@ -4,6 +4,7 @@ Description:
 Countdown quiz with questions relating to Javascript. 
 
 Screenshot: 
+<img width="737" alt="JSQuizSC" src="https://user-images.githubusercontent.com/15876794/137044107-15e73a6d-77c6-4eb6-9c35-c84f397e366d.png">
 
 How to use: 
 1. Go to: https://stephanieheins.github.io/JSQuizCountdown/
